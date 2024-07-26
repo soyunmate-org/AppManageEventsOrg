@@ -33,7 +33,7 @@
 	<distributionManagement>
 	    <repository>
 	        <id>nexus</id>
-	        <url>https://00a5-190-5-37-40.ngrok-free.app/repository/events-mvn-app/</url>
+	        <url>https://3b33-190-5-37-40.ngrok-free.app/repository/events-mvn-app/</url>
 	    </repository>
 	</distributionManagement>
 	<dependencies>

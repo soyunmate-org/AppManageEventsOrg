@@ -30,12 +30,45 @@
 		<java.version>17</java.version>
 	</properties>
 
-	<distributionManagement>
-	    <repository>
-	        <id>nexus</id>
-	        <url>https://b0b0-190-5-37-40.ngrok-free.app/repository/events-mvn-app/</url>
-	    </repository>
-	</distributionManagement>
+<!-- 		<repositories>  
+			<repository>  
+			<id>events-mvn-app</id>  
+			<url>https://localhost:8081/repository/events-mvn-app/</url> 
+			<releases>  
+			<enabled>true</enabled>  
+			</releases>  
+			<snapshots>  
+			<enabled>true</enabled>  
+			</snapshots>  
+			</repository>  
+		</repositories>  
+
+	<distributionManagement>  
+		<repository>  
+		<id>events-mvn-app</id>  
+		<url>https://localhost:8081/repository/events-mvn-app/</url>
+		</repository>  
+		<snapshotRepository>  
+		<id>events-mvn-app</id>  
+		<url>https://localhost:8081/repository/events-mvn-app/</url> 
+		</snapshotRepository>  
+	</distributionManagement> -->
+
+	<!-- <distributionManagement>
+        <repository>
+            <id>nexus</id> 
+            <url>https://1cca-190-5-37-40.ngrok-free.app/repository/events-mvn-app/</url>
+        </repository>
+    </distributionManagement>
+ -->
+
+ <distributionManagement>
+    <repository>
+        <id>nexus</id>
+        <url>https://1cca-190-5-37-40.ngrok-free.app/repository/events-mvn-app/</url>
+    </repository>
+</distributionManagement>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

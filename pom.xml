@@ -29,6 +29,13 @@
 	<properties>
 		<java.version>17</java.version>
 	</properties>
+
+	<distributionManagement>
+	    <repository>
+	        <id>nexus</id>
+	        <url>https://1cca-190-5-37-40.ngrok-free.app/repository/events-mvn-app/</url>
+	    </repository>
+	</distributionManagement>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

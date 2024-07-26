@@ -88,6 +88,6 @@
  - Despliegue en un servidor en la nube (por ejemplo, AWS, Azure, Google Cloud) con PostgreSQL como base de datos y Java Spring Boot para el backend.
 
 
-*Test nexus*
+*Test nexus2*
 
 

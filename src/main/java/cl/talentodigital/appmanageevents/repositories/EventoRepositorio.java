@@ -3,9 +3,11 @@ package cl.talentodigital.appmanageevents.repositories;
 import cl.talentodigital.appmanageevents.entities.Evento;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Repository
 public interface EventoRepositorio extends JpaRepository <Evento, Long>{
 //    @Query("SELECT p from Evento p WHERE" +
 //            " CONCAT(p.id , p.nombre , p.fecha)"

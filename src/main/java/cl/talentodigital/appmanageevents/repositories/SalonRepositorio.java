@@ -4,12 +4,14 @@ import cl.talentodigital.appmanageevents.entities.Evento;
 import cl.talentodigital.appmanageevents.entities.Salon;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
 
+@Repository
 public interface SalonRepositorio extends JpaRepository<Salon, Long> {
-
+    public int xd = 12;
     public List<Salon> findAll();
     public Optional<Salon> findById(Long id);
 

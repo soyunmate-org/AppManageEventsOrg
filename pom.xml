@@ -30,33 +30,33 @@
 		<java.version>17</java.version>
 	</properties>
 
-<!-- 		<repositories>  
-			<repository>  
-			<id>events-mvn-app</id>  
-			<url>https://localhost:8081/repository/events-mvn-app/</url> 
-			<releases>  
-			<enabled>true</enabled>  
-			</releases>  
-			<snapshots>  
-			<enabled>true</enabled>  
-			</snapshots>  
-			</repository>  
-		</repositories>  
+<!-- 		<repositories>
+			<repository>
+			<id>events-mvn-app</id>
+			<url>https://localhost:8081/repository/events-mvn-app/</url>
+			<releases>
+			<enabled>true</enabled>
+			</releases>
+			<snapshots>
+			<enabled>true</enabled>
+			</snapshots>
+			</repository>
+		</repositories>
 
-	<distributionManagement>  
-		<repository>  
-		<id>events-mvn-app</id>  
+	<distributionManagement>
+		<repository>
+		<id>events-mvn-app</id>
 		<url>https://localhost:8081/repository/events-mvn-app/</url>
-		</repository>  
-		<snapshotRepository>  
-		<id>events-mvn-app</id>  
-		<url>https://localhost:8081/repository/events-mvn-app/</url> 
-		</snapshotRepository>  
+		</repository>
+		<snapshotRepository>
+		<id>events-mvn-app</id>
+		<url>https://localhost:8081/repository/events-mvn-app/</url>
+		</snapshotRepository>
 	</distributionManagement> -->
 
 	<!-- <distributionManagement>
         <repository>
-            <id>nexus</id> 
+            <id>nexus</id>
             <url>https://1cca-190-5-37-40.ngrok-free.app/repository/events-mvn-app/</url>
         </repository>
     </distributionManagement>
@@ -65,7 +65,7 @@
  <distributionManagement>
     <repository>
         <id>nexus</id>
-        <url>https://1cca-190-5-37-40.ngrok-free.app/repository/events-mvn-app/</url>
+        <url>https://2001-190-5-37-40.ngrok-free.app/repository/events-mvn-app/</url>
     </repository>
 </distributionManagement>
 
@@ -126,6 +126,12 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.13.2</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -148,6 +154,19 @@
             			<artifactId>sonar-maven-plugin</artifactId>
             			<version>3.9.1.2184</version>
        			</plugin>
+
+
+			<plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.0.0-M5</version>
+            <configuration>
+                <includes>
+                    <include>**/*Tests.java</include>
+                    <include>**/*SuiteDePruebas.java</include>
+                </includes>
+            </configuration>
+        </plugin>
 		</plugins>
 	</build>
 

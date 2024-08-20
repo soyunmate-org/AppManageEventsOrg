@@ -88,6 +88,6 @@
  - Despliegue en un servidor en la nube (por ejemplo, AWS, Azure, Google Cloud) con PostgreSQL como base de datos y Java Spring Boot para el backend.
 
 
-*SLACK INTEGRATION TEST COMMIT 2*
+*Test commit for modulo 4 - actividad 2 - requerimiento 5*
 
 

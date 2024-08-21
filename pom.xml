@@ -169,49 +169,7 @@
         </plugin>
 
 
-             <plugin>
-                <groupId>com.smartbear.soapui</groupId>
-                <artifactId>soapui-maven-plugin</artifactId>
-                <version>5.0.0</version>
 
-                <executions>
-                    <execution>
-                        <id>RestAPI-positiveTestSuite</id>
-                        <configuration>
-                            <projectFile>RestAPI-positiveTestSuite.xml</projectFile>
-                            <outputFolder>target/surefire-reports</outputFolder>
-                            <testSuite>Positive cases</testSuite>
-                            <junitReport>true</junitReport>
-                            <exportwAll>true</exportwAll>
-                            <printReport>true</printReport>
-                            <testFailIgnore>true</testFailIgnore>
-                        </configuration>
-                        <goals>
-                            <goal>test</goal>
-                        </goals>
-                        <phase>test</phase>
-                    </execution>
-
-                    <execution>
-                        <id>RestAPI-negativeTestSuite</id>
-                        <configuration>
-                            <projectFile>RestAPI-negativeTestSuite.xml</projectFile>
-                            <outputFolder>target/surefire-reports</outputFolder>
-                            <testSuite>Negative tests</testSuite>
-                            <junitReport>true</junitReport>
-                            <exportwAll>true</exportwAll>
-                            <printReport>true</printReport>
-                            <testFailIgnore>true</testFailIgnore>
-                        </configuration>
-
-                        <goals>
-                            <goal>test</goal>
-                        </goals>
-
-                        <phase>test</phase>
-                    </execution>
-                </executions>
-            </plugin>
 
 		</plugins>
 	</build>

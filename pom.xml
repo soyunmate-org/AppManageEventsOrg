@@ -65,7 +65,7 @@
  <distributionManagement>
     <repository>
         <id>nexus</id>
-        <url>https://9dff-190-5-37-40.ngrok-free.app/repository/events-mvn-app/</url>
+        <url>https://1554-190-5-37-40.ngrok-free.app/repository/events-mvn-app/</url>
     </repository>
 </distributionManagement>
 
@@ -132,6 +132,23 @@
 			<artifactId>junit</artifactId>
 			<version>4.13.2</version>
 		</dependency>
+
+
+        <!-- Dependencia de Selenium -->
+    <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>4.12.0</version>
+    </dependency>
+
+    <!-- Dependencia del WebDriver de Chrome -->
+    <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-chrome-driver</artifactId>
+        <version>4.12.0</version>
+    </dependency>
+
+
 	</dependencies>
 
 	<build>

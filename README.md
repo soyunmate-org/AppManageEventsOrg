@@ -88,6 +88,6 @@
  - Despliegue en un servidor en la nube (por ejemplo, AWS, Azure, Google Cloud) con PostgreSQL como base de datos y Java Spring Boot para el backend.
 
 
-*Test commit for modulo 4 - actividad 2 - requerimiento 5*
+*Test commit for junit,jmeter,soap and selenium integrations*
 
 

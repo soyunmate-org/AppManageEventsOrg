@@ -29,7 +29,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
     @Test
      void testFirefox() throws MalformedURLException {
         FirefoxOptions options = new FirefoxOptions();
-        WebDriver driver = new RemoteWebDriver(new URL("http://selenium:4444/wd/hub"), options);
+        WebDriver driver = new RemoteWebDriver(new URL("http://selenium-hub:4444/wd/hub"), options);
         driver.get("https://www.google.com");
         String title = driver.getTitle();
         assertEquals("Google", title);
@@ -39,7 +39,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
     @Test
      void testEdge() throws MalformedURLException {
         EdgeOptions options = new EdgeOptions();
-        WebDriver driver = new RemoteWebDriver(new URL("http://selenium:4444/wd/hub"), options);
+        WebDriver driver = new RemoteWebDriver(new URL("http://selenium-hub:4444/wd/hub"), options);
         driver.get("https://www.google.com");
         String title = driver.getTitle();
         assertEquals("Google", title);

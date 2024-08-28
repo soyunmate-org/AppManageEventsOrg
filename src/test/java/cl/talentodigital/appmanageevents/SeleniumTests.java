@@ -1,7 +1,6 @@
 package cl.talentodigital.appmanageevents;
 
 import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -18,16 +17,10 @@ public class SeleniumTests {
 
     private WebDriver driver;
 
-    @BeforeEach
-    public void setUp() throws MalformedURLException {
-        ChromeOptions options = new ChromeOptions();
-        // Conectar al contenedor de Selenium
-        driver = new RemoteWebDriver(new URL("http://selenium-hub:4444/wd/hub"), options);
-    }
-
     @Test
-    public void testGoogleTitle() {
-        // Abrir Google y verificar el título
+    public void testGoogleTitle() throws MalformedURLException {
+        ChromeOptions options = new ChromeOptions();
+        WebDriver driver = new RemoteWebDriver(new URL("http://selenium-hub:4444/wd/hub"), options);
         driver.get("https://www.google.com");
         String title = driver.getTitle();
         assertEquals("Google", title);

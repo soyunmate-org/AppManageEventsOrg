@@ -26,7 +26,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
         WebDriver driver = new RemoteWebDriver(new URL("http://selenium-hub:4444/wd/hub"), options);
         driver.get("https://www.google.com");
 
-        System.out.println("test");
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.titleIs("Google"));

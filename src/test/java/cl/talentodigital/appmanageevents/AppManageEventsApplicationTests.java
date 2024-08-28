@@ -12,7 +12,7 @@ class AppManageEventsApplicationTests {
 
 
 	@Test
-    public void testSuma() {
+     void testSuma() {
 		int num1 = 5;
 		int num2 = 5;
 
@@ -21,7 +21,7 @@ class AppManageEventsApplicationTests {
     }
 
 	@Test
-    public void testRest() {
+     void testRest() {
 		int num1 = 15;
 		int num2 = 3;
 

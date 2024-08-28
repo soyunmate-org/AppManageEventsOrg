@@ -13,12 +13,12 @@ import java.net.URL;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class SeleniumTests {
+ class SeleniumTests {
 
     private WebDriver driver;
 
     @Test
-    public void testGoogleTitle() throws MalformedURLException {
+     void testGoogleTitle() throws MalformedURLException {
         ChromeOptions options = new ChromeOptions();
         WebDriver driver = new RemoteWebDriver(new URL("http://selenium-hub:4444/wd/hub"), options);
         driver.get("https://www.google.com");
@@ -27,7 +27,7 @@ public class SeleniumTests {
     }
 
     @Test
-    public void testFirefox() throws MalformedURLException {
+     void testFirefox() throws MalformedURLException {
         FirefoxOptions options = new FirefoxOptions();
         WebDriver driver = new RemoteWebDriver(new URL("http://selenium:4444/wd/hub"), options);
         driver.get("https://www.google.com");
@@ -37,7 +37,7 @@ public class SeleniumTests {
     }
 
     @Test
-    public void testEdge() throws MalformedURLException {
+     void testEdge() throws MalformedURLException {
         EdgeOptions options = new EdgeOptions();
         WebDriver driver = new RemoteWebDriver(new URL("http://selenium:4444/wd/hub"), options);
         driver.get("https://www.google.com");

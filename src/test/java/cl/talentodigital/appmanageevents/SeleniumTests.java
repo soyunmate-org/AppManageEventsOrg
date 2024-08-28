@@ -1,4 +1,4 @@
-package cl.talentodigital.appmanageevents;
+package test.java.cl.talentodigital.appmanageevents;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -20,7 +20,7 @@ public class SeleniumTests {
     public void setUp() throws MalformedURLException {
         ChromeOptions options = new ChromeOptions();
         // Conectar al contenedor de Selenium
-        driver = new RemoteWebDriver(new URL("http://selenium:4444/wd/hub"), options);
+        driver = new RemoteWebDriver(new URL("http://selenium-hub:4444/wd/hub"), options);
     }
 
     @Test

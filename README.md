@@ -21,6 +21,7 @@
 - ##### Herramientas para aplicar DevOps
   - Webhooks
   - Jenkins
+  - Terraform
 
 
 - ##### Stack
